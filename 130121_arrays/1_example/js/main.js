@@ -53,3 +53,7 @@ for (let i = 1; i < numbers.length; i++) {
 }
 
 console.log(max);
+
+let arr = [];
+
+arr[arr.length] = 123;
