@@ -25,3 +25,20 @@ setTimeout(function printStuff(i) {
         setTimeout(printStuff, 1000, ++i);
     }
 }, 1000, 1);
+
+
+function printNumbersInterval() {
+    let i = 1;
+
+    function someFunction() {
+        console.log(i++);
+    }
+
+    const timeId = setInterval(someFunction, 50);
+
+    setTimeout(function() {
+        clearInterval(timeId);
+    }, 5000);
+}
+
+printNumbersInterval();
