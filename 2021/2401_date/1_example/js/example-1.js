@@ -14,7 +14,7 @@ console.log("Из миллисекунд:");
 console.log(dateFromMillis);
 
 // Через строку даты
-let dateFromDateString = new Date("");
+let dateFromDateString = new Date("1995-12-17T03:24:00");
 
 console.log("Из строки:");
 console.log(dateFromMillis);
