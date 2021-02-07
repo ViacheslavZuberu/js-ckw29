@@ -13,6 +13,13 @@ class Person {
         return `${this.name} ${this.surname}`;
     }
 
+    // "Tom Smith"
+    set fullName(value) {
+        const arr = value.split(' ');
+        this.name = arr[0];
+        this.surname = arr[1];
+    }
+
     static getAvgAge() {
         return 70;
     }
@@ -28,6 +35,8 @@ class Student extends Person {
 let tom = new Student("Tom", "Smith");
 
 console.log(tom);
-console.log(tom.getFullName());
+console.log(tom.fullName);
+
+tom.fullName = "Tom Smith";
 
 console.log(Person.getAvgAge());

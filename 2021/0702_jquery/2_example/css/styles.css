@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 8px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.dropdown-list {
+    display: none;
+    width: 70px;
+    position: absolute;
+    border: 1px solid #bbb;
+    padding: 4px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.dropdown-list > .item {
+    cursor: pointer;
+}
+
+.dropdown-list > .item:hover {
+    background-color: #999;
+}
+
